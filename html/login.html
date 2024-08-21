@@ -9,26 +9,29 @@
 </head>
 <body>
 
-    <main>
+    <main class="cuerpo">
+
         <div class="imagen">
-
             <img src="../assets/nenufar_rosa.png" alt="Imagen de un nenúfar rosa generado con IA por FREEPIK">
-
         </div>
 
         <section class="principal">
-
             <header class="principal__header">
-
                 <nav class="principal__header__menu">
-                    <!-- COMBOBOX -->
-                    <a class="principal__header__menu__crearCuenta" href="sign_up.html">Crear cuenta</a>
+                    <section class="principal__header__menu__sinCuenta">
+                        <p class="principal__header__menu__sinCuenta__parrafo">
+                            ¿No tienes una cuenta?
+                        </p>
+
+                        <a class="principal__header__menu__sinCuenta__crearCuenta" href="sign_up.html">
+                            Crear cuenta
+                        </a>
+                    </section>
                 </nav>
 
             </header>
 
             <section class="principal__contenido">
-                
                 <section class="principal__contenido__superior">
                     
                     <div class="principal__contenido__superior__circulo"></div>
@@ -51,32 +54,37 @@
                             Correo electrónico
                         </p>
 
-                        <input class="principal__contenido__datos__mail__input" type="text">
+                        <input class="principal__contenido__datos__mail__input" type="email" placeholder="email@example.com">
 
                     </section>
                 
                     <section class="principal__contenido__datos__password">
 
-                        <p class="principal__contenido__datos__password__parrafo">
-                            Contraseña
-                        </p>
+                        <section class="principal__contenido__datos__password__parrafo">
+                            
+                            <p class="texto-password">Contraseña</p>
 
-                        <input class="principal__contenido__datos__password__input" type="password">
+                            <div class="opcion__mostrar-ocultar">
+                                <img class="icono-mostrar" src="../assets/ojo.png" alt="Ícono de un ojo">
+                                <p class="opcion-mostrar">Mostrar</p>
+                            </div>
+                        </section>
+                        <input class="principal__contenido__datos__password__input" type="password" placeholder="**********">
 
                     </section>
 
                 </section>
 
-                <div class="principal__contenido__separador">
-
-                    <p class="principal__contenido__separador__o">
-                        o
-                    </p>
-
-                </div>
-
                 <section class="principal__contenido__inferior">
                     
+                    <div class="principal__contenido__separador">
+
+                        <hr class="principal__contenido__separador__linea">
+                        <span>o</span>
+                        <hr class="principal__contenido__separador__linea">
+    
+                    </div>
+
                     <button class="principal__contenido__inferior__botonContinuarGoogle">
 
                         <img class="principal__contenido__inferior__botonContinuarGoogle__imagen" src="../assets/google.png" alt="Logo de Google">
@@ -91,7 +99,7 @@
                         ¿Olvidaste tu contraseña?
                     </p>
 
-                    <button class="principal__contenido__inferior__iniciarSesion">
+                    <button class="principal__contenido__inferior__botonIniciarSesion">
                         Iniciar sesión
                     </button>
 

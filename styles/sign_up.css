@@ -12,10 +12,9 @@
     --fuente-karla: 'Karla', sans-serif;
 }
 
-
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 body {
@@ -51,9 +50,9 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 40px;
     width: 613px;
     height: 736px;
-    gap: 40px;
     background-color: var(--color-primario);
     border-radius: 0 20px 20px 0;
 }
@@ -74,18 +73,20 @@ main {
     align-items: center;
 }
 
-.principal__header__menu__sinCuenta {
+.principal__header__menu__conCuenta {
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 5px;
 }
-.principal__header__menu__sinCuenta__parrafo {
+
+.principal__header__menu__conCuenta__parrafo {
     font-size: 12px;
     color: var(--color-terciario);
+    cursor: default;
 }
 
-.principal__header__menu__sinCuenta__crearCuenta {
+.principal__header__menu__conCuenta__iniciarSesion {
     border: 2px solid var(--color-secundario);
     border-radius: 11px;
     font-size: 12px;
@@ -93,8 +94,9 @@ main {
     text-decoration: none;
     color: var(--color-terciario);
     font-weight: bold;
+    cursor: pointer;
 }
-.principal__header__menu__sinCuenta__crearCuenta:hover {
+.principal__header__menu__conCuenta__iniciarSesion:hover {
     background-color: var(--color-hover);
 }
 
@@ -104,7 +106,7 @@ main {
     align-items: center;
     width: 356px;
     height: 576px;
-    gap: 30px;
+    gap: 15px;
     border: 2px solid var(--color-secundario);
     border-radius: 20px;
     background-color: var(--color-primario);
@@ -114,10 +116,10 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
     width: 172px;
-    height: 128px;
     margin-top: 18px;
+    cursor: default;
 }
 
 .principal__contenido__superior__circulo {
@@ -150,6 +152,7 @@ main {
     color: var(--color-terciario);
     font-size: 14px;
     font-weight: bold;
+    cursor: default;
 }
 
 .principal__contenido__datos__mail__input {
@@ -164,6 +167,7 @@ main {
     padding: 12px 11.22px;
     outline: none;
 }
+
 .principal__contenido__datos__mail__input::placeholder {
     color: var(--color-tenue);
 }
@@ -172,26 +176,33 @@ main {
     display: flex;
     flex-direction: column;
     gap: 6px;
-
 }
 
 .principal__contenido__datos__password__parrafo {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 288px;
 }
 
 .texto-password {
     font-size: 14px;
     font-weight: bold;
     color: var(--color-terciario);
+    cursor: default;
 }
 
 .opcion__mostrar-ocultar {
+    font-size: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: end;
     gap: 2px;
+    border: none;
+    background-color: var(--transparente);
+    cursor: pointer;
+    font-weight: bold;
 }
 .icono-mostrar {
     width: 10px;
@@ -209,8 +220,19 @@ main {
     padding: 12px 11.22px;
     outline: none;
 }
+
 .principal__contenido__datos__password__input::placeholder {
     color: var(--color-tenue);
+}
+
+.principal__contenido__inferior__aviso {
+    margin-top: 5px;
+    font-size: 10px;
+    color: var(--color-secundario);
+    width: 288px;
+    text-align: center;
+    cursor: pointer;
+    
 }
 
 .principal__contenido__separador {
@@ -237,7 +259,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 20px;
 }
 
 .principal__contenido__inferior__botonContinuarGoogle {
@@ -252,6 +274,9 @@ main {
     border: 2px solid var(--color-secundario);
     border-radius: 19.5px;
     background-color: var(--transparente);
+    color: var(--color-secundario);
+    cursor: pointer;
+    font-weight: bold;
 }
 .principal__contenido__inferior__botonContinuarGoogle:hover {
     background-color: var(--color-hover);
@@ -261,12 +286,7 @@ main {
     height: 17px;
 }
 
-.principal__contenido__inferior__passOlvidada {
-    font-size: 12px;
-    color: var(--color-secundario)
-}
-
-.principal__contenido__inferior__botonIniciarSesion {
+.principal__contenido__inferior__botonCrearCuenta {
     border: 2px solid var(--color-secundario);
     width: 288px;
     height: 39px;
@@ -274,7 +294,8 @@ main {
     background-color: var(--transparente);
     color: var(--color-secundario);
     font-weight: bold;
+    cursor: pointer;
 }
-.principal__contenido__inferior__botonIniciarSesion:hover {
+.principal__contenido__inferior__botonCrearCuenta:hover {
     background-color: var(--color-hover);
 }

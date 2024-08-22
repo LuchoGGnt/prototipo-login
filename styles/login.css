@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root {
+    --color-gradiente-inicial: #260144;
+    --color-gradiente-final: #460044;
+    --transparente: rgba(0 0 0 / 0);
+    --color-tenue: rgba(52 21 51 / 0.2);
+    --color-hover: #EEDCED;
+    --color-primario: #FDFAFF;
+    --color-secundario: #B28CB1;
+    --color-terciario: #341533;
+    --fuente-karla: 'Karla', sans-serif;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--fuente-karla);
+    background: linear-gradient(to bottom right, var(--color-gradiente-inicial), var(--color-gradiente-final));
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.cuerpo {
+    display: flex;
+    flex-direction: row;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen {
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px 0 0 20px;
+}
+
+.principal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 613px;
+    height: 736px;
+    gap: 40px;
+    background-color: var(--color-primario);
+    border-radius: 0 20px 20px 0;
+}
+
+.principal__header {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: end;
+    margin: 30px 37px 0 37px;
+}
+
+.principal__header__menu {
+    width: 539px;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+}
+
+.principal__header__menu__sinCuenta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 5px;
+}
+.principal__header__menu__sinCuenta__parrafo {
+    font-size: 12px;
+    color: var(--color-terciario);
+    cursor: default;
+}
+
+.principal__header__menu__sinCuenta__crearCuenta {
+    border: 2px solid var(--color-secundario);
+    border-radius: 11px;
+    font-size: 12px;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: var(--color-terciario);
+    font-weight: bold;
+}
+.principal__header__menu__sinCuenta__crearCuenta:hover {
+    background-color: var(--color-hover);
+}
+
+.principal__contenido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 356px;
+    height: 576px;
+    gap: 30px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 20px;
+    background-color: var(--color-primario);
+}
+
+.principal__contenido__superior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    width: 172px;
+    height: 128px;
+    margin-top: 18px;
+    cursor: default;
+}
+
+.principal__contenido__superior__circulo {
+    width: 30px;
+    height: 30px;
+    background-color: var(--color-secundario);
+    border-radius: 50%;
+}
+.principal__contenido__superior__parrafo {
+    font-size: 12px;
+    color: var(--color-terciario);
+    text-align: center;
+}
+
+.principal__contenido__datos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.principal__contenido__datos__mail {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 6px;
+}
+
+.principal__contenido__datos__mail__parrafo {
+    color: var(--color-terciario);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+}
+
+.principal__contenido__datos__mail__input {
+    box-sizing: border-box;
+    width: 288px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--color-secundario);
+    background-color: var(--transparente);
+    font-size: 14px;
+    color: var(--color-terciario);
+    padding: 12px 11.22px;
+    outline: none;
+}
+.principal__contenido__datos__mail__input::placeholder {
+    color: var(--color-tenue);
+}
+
+.principal__contenido__datos__password {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+}
+
+.principal__contenido__datos__password__parrafo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.texto-password {
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--color-terciario);
+    cursor: default;
+}
+
+.opcion__mostrar-ocultar {
+    font-size: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2px;
+    border: none;
+    background-color: var(--transparente);
+    cursor: pointer;
+    font-weight: bold;
+}
+.icono-mostrar {
+    width: 10px;
+    height: 10px;
+}
+
+.principal__contenido__datos__password__input {
+    box-sizing: border-box;
+    width: 288px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--color-secundario);
+    background-color: var(--transparente);
+    font-size: 14px;
+    padding: 12px 11.22px;
+    outline: none;
+}
+.principal__contenido__datos__password__input::placeholder {
+    color: var(--color-tenue);
+}
+
+.principal__contenido__separador {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 288px;
+}
+
+.principal__contenido__separador .principal__contenido__separador__linea {
+    flex-grow: 1;
+    height: 1px;
+    background-color: var(--color-secundario);
+    border: none;
+    
+}
+
+.principal__contenido__separador span {
+    margin: 0 10px;
+    font-size: 14px;
+    color: var(--color-secundario);
+    cursor: default;
+}
+
+.principal__contenido__inferior {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.principal__contenido__inferior__botonContinuarGoogle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    box-sizing: border-box;
+    width: 288px;
+    height: 39px;
+    border: 2px solid var(--color-secundario);
+    border-radius: 19.5px;
+    background-color: var(--transparente);
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+.principal__contenido__inferior__botonContinuarGoogle:hover {
+    background-color: var(--color-hover);
+}
+.principal__contenido__inferior__botonContinuarGoogle__imagen {
+    width: 17px;
+    height: 17px;
+}
+
+.principal__contenido__inferior__passOlvidada {
+    font-size: 12px;
+    color: var(--color-secundario);
+    cursor: pointer;
+}
+
+.principal__contenido__inferior__botonIniciarSesion {
+    border: 2px solid var(--color-secundario);
+    width: 288px;
+    height: 39px;
+    border-radius: 19.5px;
+    background-color: var(--transparente);
+    color: var(--color-secundario);
+    font-weight: bold;
+    cursor: pointer;
+}
+.principal__contenido__inferior__botonIniciarSesion:hover {
+    background-color: var(--color-hover);
+}

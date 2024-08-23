@@ -116,7 +116,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 15px;
     width: 172px;
     margin-top: 18px;
     cursor: default;
@@ -141,21 +141,21 @@ main {
     gap: 15px;
 }
 
-.principal__contenido__datos__mail {
+.principal__contenido__datos__nombre {
     display: flex;
     flex-direction: column;
     align-items: left;
     gap: 6px;
 }
 
-.principal__contenido__datos__mail__parrafo {
+.principal__contenido__datos__nombre__parrafo {
     color: var(--color-terciario);
     font-size: 14px;
     font-weight: bold;
     cursor: default;
 }
 
-.principal__contenido__datos__mail__input {
+.principal__contenido__datos__nombre__input {
     box-sizing: border-box;
     width: 288px;
     height: 40px;
@@ -168,48 +168,28 @@ main {
     outline: none;
 }
 
-.principal__contenido__datos__mail__input::placeholder {
+.principal__contenido__datos__nombre__input::placeholder {
     color: var(--color-tenue);
 }
 
-.principal__contenido__datos__password {
+.principal__contenido__datos__apellidoPaterno {
     display: flex;
     flex-direction: column;
     gap: 6px;
 }
 
-.principal__contenido__datos__password__parrafo {
+.principal__contenido__datos__apellidoPaterno__parrafo {
+    color: var(--color-terciario);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 288px;
 }
 
-.texto-password {
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--color-terciario);
-    cursor: default;
-}
-
-.opcion__mostrar-ocultar {
-    font-size: 10px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: end;
-    gap: 2px;
-    border: none;
-    background-color: var(--transparente);
-    cursor: pointer;
-    font-weight: bold;
-}
-.icono-mostrar {
-    width: 10px;
-    height: 10px;
-}
-
-.principal__contenido__datos__password__input {
+.principal__contenido__datos__apellidoPaterno__input {
     box-sizing: border-box;
     width: 288px;
     height: 40px;
@@ -221,25 +201,89 @@ main {
     outline: none;
 }
 
-.principal__contenido__datos__password__input::placeholder {
+.principal__contenido__datos__apellidoPaterno__input::placeholder {
     color: var(--color-tenue);
 }
 
+.principal__contenido__datos__apellidoMaterno {
+    
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.principal__contenido__datos__apellidoMaterno__parrafo {
+    color: var(--color-terciario);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 288px;
+}
+
+.principal__contenido__datos__apellidoMaterno__input {
+    box-sizing: border-box;
+    width: 288px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--color-secundario);
+    background-color: var(--transparente);
+    font-size: 14px;
+    padding: 12px 11.22px;
+    outline: none;
+}
+
+.principal__contenido__datos__apellidoMaterno__input::placeholder {
+    color: var(--color-tenue);
+}
+
+.principal__contenido__datos__fechaNacimiento {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.principal__contenido__datos__fechaNacimiento__parrafo {
+    color: var(--color-terciario);
+    font-size: 14px;
+    font-weight: bold;
+    cursor: default;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 288px;
+}
+
+.principal__contenido__datos__fechaNacimiento__input {
+    box-sizing: border-box;
+    width: 288px;
+    height: 40px;
+    border-radius: 8px;
+    border: 2px solid var(--color-secundario);
+    background-color: var(--transparente);
+    font-size: 14px;
+    padding: 12px;
+    outline: none;
+}
+
+.principal__contenido__datos__fechaNacimiento__input::-webkit-datetime-edit {
+    font-family: var(--fuente-karla);
+    font-size: 14px;
+    color: var(--color-secundario);
+}
+
+
 .principal__contenido__inferior__aviso {
     margin-top: 5px;
+    gap: 25px;
     font-size: 10px;
     color: var(--color-secundario);
     width: 288px;
     text-align: center;
     cursor: pointer;
 
-}
-
-.principal__contenido__separador {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    width: 288px;
 }
 
 .principal__contenido__separador .principal__contenido__separador__linea {
